@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "PERSONA")
+
 public class Persona {
     
     @Id
@@ -17,7 +18,7 @@ public class Persona {
     private boolean alive;
 
 
-    
+    public Persona(){}
     public Persona(String id, String name, int age)
     {
         this.id=id;
